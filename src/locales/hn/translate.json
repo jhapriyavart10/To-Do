@@ -1,0 +1,11 @@
+{
+  "header": "सुलभ कार्य सूची",
+  "placeholder": "नया कार्य जोड़ें",
+  "addTask": "कार्य जोड़ें",
+  "deleteTask": "हटाएँ",
+  "markComplete": "{{task}} को पूरा के रूप में चिह्नित करें",
+  "markIncomplete": "{{task}} को अधूरा के रूप में चिह्नित करें",
+  "listOfTasks": "कार्य सूची",
+  "Increase Font Size": "फॉन्ट आकार बढ़ाएँ",
+  "Decrease Font Size": "फॉन्ट आकार घटाएँ"
+}

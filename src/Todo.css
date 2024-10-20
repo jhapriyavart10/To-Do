@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  position: relative; /* Added for positioning language button */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.todo-container:hover {
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.todo-heading {
+    font-size: 2rem;
+    margin: 33px 0 10px; /* Added top margin for spacing */
+    color: #fff;
+  }
+
+button {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+/* Other styles... */
+
+/* Positioning Language Button and Voice Command Button */
+.language-button {
+    position: absolute;
+    top: 10px;   /* Position at the top */
+    right: 10px; /* Adjusted for desired right positioning */
+    background-color: #4285f4;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .voice-command-button {
+    position: absolute;
+    top: 10px;  /* Align with Language Button */
+    left: 10px; /* Position at the left */
+    background-color: #4285f4;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Other styles... */
+  
+
+.font-size-controls {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  border: 2px solid #6a11cb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #6a11cb;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 75%;
+  margin-right: 10px;
+}
+
+.add-task-button {
+  background-color: #6a11cb;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add-task-button:hover {
+  background-color: #5e00d4;
+  transform: scale(1.05);
+}
+
+/* Language options */
+.language-options {
+  position: absolute;
+  right: 20px;
+  top: 50px; /* Adjusted top to avoid overlap with buttons */
+  display: flex;
+  flex-direction: column;
+}
+
+.language-options button {
+  background-color: #ff7e5f;
+  border: none;
+  padding: 8px;
+  margin: 5px 0;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.language-options button:hover {
+  background-color: #ff6e50;
+  transform: scale(1.05);
+}
+
+/* Dark Mode (Default) */
+.todo-container {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* Light Mode */
+body.light-mode .todo-container {
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+/* For other light mode adjustments, make sure text/background contrast is sufficient */
+body.light-mode .todo-heading {
+  color: black;
+}
+
+body.light-mode button {
+  background: linear-gradient(to right, #feb47b, #ff7e5f);
+  color: black;
+}
+
+body.light-mode .language-button, body.light-mode .voice-command-button {
+  background-color: #4285f4;
+  color: #fff;
+}
+
+body.light-mode input[type="text"] {
+  border-color: #333;
+  color: black;
+}
+
+/* Add focus styles for accessibility */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); /* Adjust color for visibility */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .todo-container {
+    width: 90%;
+  }
+
+  /* Adjust font sizes, button sizes, etc. */
+}

@@ -1,0 +1,10 @@
+{
+    "header": "Accessible TODO List",
+    "placeholder": "Add a new task",
+    "addTask": "Add Task",
+    "deleteTask": "Delete",
+    "markComplete": "Mark {{task}} as complete",
+    "markIncomplete": "Mark {{task}} as incomplete",
+    "listOfTasks": "List of tasks"
+  }
+  
